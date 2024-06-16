@@ -42,15 +42,15 @@ if ($result->num_rows > 0) {
             $mail->isSMTP();
             $mail->Host       = 'smtp.gmail.com';
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'tindwahamadi@gmail.com'; // Update with your Gmail email
-            $mail->Password   = 'vqgo thlw eygc vjxx'; // Update with your Gmail password
+            $mail->Username   = ''; // Update with your Gmail email
+            $mail->Password   = ''; // Update with your Gmail password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port       = 465;
 
             //Recipients
-            $mail->setFrom('tindwahamadi@gmail.com', 'SpecialEducationTeachers App');
+            $mail->setFrom('', 'SpecialEducationTeachers App');
             $mail->addAddress($email);
-            $mail->addReplyTo('tindwahamadi@gmail.com', 'Information');
+            $mail->addReplyTo('', 'Information');
 
             //Content
             $mail->isHTML(true);
